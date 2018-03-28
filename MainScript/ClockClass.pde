@@ -1,16 +1,16 @@
 class Clock{
   //Lengths of hands
-  float sRad = 162;
-  float mRad = 137;
-  float hRad = 120;
+  private float sRad = 162;
+  private float mRad = 137;
+  private float hRad = 120;
   
-  String hr;
-  String min;
-  String sec;
-  String end;
+  private String hr;
+  private String min;
+  private String sec;
+  private String end;
   
-  int hourOffset;
-  int dotSize;
+  private int hourOffset;
+  private int dotSize;
     
   //use second(),minute(), and hour() functions for current time
   
@@ -77,7 +77,7 @@ class Clock{
     }  
   }
   
-  void displayDots(){
+  private void displayDots(){
     //same technique as numbers
     strokeWeight(2);
     fill(0);
@@ -92,7 +92,7 @@ class Clock{
     }
   }
   
-  void displayNumbers(){
+  private void displayNumbers(){
     fill(0);
     textAlign(CENTER,CENTER);
     textSize(20);
